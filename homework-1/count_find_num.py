@@ -5,6 +5,8 @@ def count_find_num(primesL, limit):
     maxpower = 0
     for i in primesL:
         result *= i
+    if result == limit:
+        return[1, result]
     while result*(primesL[0]**maxpower) < limit:
         maxpower += 1
     
