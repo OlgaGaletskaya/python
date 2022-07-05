@@ -3,7 +3,7 @@ import itertools
 base= (0,2)
 points=( (2,5), (5,2), (6,6), (8,3) )
 minpath = 10**len(points)
-for i in itertools.permutations(points, 4):
+for i in itertools.permutations(points, len(points)):
     way=0
     path=[]
     start = base
